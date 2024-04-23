@@ -9,8 +9,8 @@
 </head>
 <body>
 <header>
+    <a><img src="img/main-logo.svg" width="60" height="60" alt="Логотип"></a>
     <nav>
-        <a><img src="img/main-logo.svg" width="60" height="60" alt="Логотип"></a>
         <a href="#about">Обо мне</a>
         <a href="#skills">Навыки</a>
         <a href="#interests">Интересы</a>
@@ -22,7 +22,7 @@
     <section id="intro">
         <img src="img/user_photo.jpg" width="400" height="400" alt="Фото Анастасии">
         <h1>Анастасия Дмитриева</h1>
-        <h2>Программист</h2>
+        <p>Программист</p>
     </section>
 
     <section id="about">
@@ -37,9 +37,11 @@
 
     <section id="skills">
         <h2>Мои навыки</h2>
-        <p>Сортировать
-        <button>по названию</button>
-        <button>по уровню</button></p>
+        <div>
+            <p>Сортировать
+            <button>по названию</button>
+            <button>по уровню</button></p>
+        </div>
         <dl>
             <dt><img src="img/Icon1HTML.svg" width="30" height="30" alt="Логотип HTML">html</dt>
             <dd>
@@ -68,23 +70,23 @@
 
     <section id="contacts">
         <h2>Мои контакты</h2>
-        <div>
-            <a href="tel:+79991234567">+7 999 123-45-67</a>
-            <a href="mailto:email@mail.ru">email@mail.ru</a>
-        </div>
+        <ul>
+            <li><a href="tel:+79991234567">+7 999 123-45-67</a></li>
+            <li><a href="mailto:email@mail.ru">email@mail.ru</a></li>
+        </ul>
 
-        <div>
-            <a>GitHub</a>
-            <a>Gitlab</a>
-            <a>Instagram</a>
-            <a>Telegram</a>
-            <a>Вконтакте</a>
-        </div>
+        <ul>
+            <li><a>GitHub</a></li>
+            <li><a>Gitlab</a></li>
+            <li><a>Instagram</a></li>
+            <li><a>Telegram</a></li>
+            <li><a>Вконтакте</a></li>
+        </ul>
     </section>
 </main>
 
 <footer>
-    © 2024 Анастасия Дмитриева
+    <p>© 2024 Анастасия Дмитриева</p>
 </footer>
 </body>
 </html>
