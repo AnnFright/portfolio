@@ -58,6 +58,16 @@ button, a {
     padding: 0 20px;
 }
 
+.main-nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px 10px 15px;
+}
+
+.main-nav a:hover {
+    color: var(--green);
+}
+
 .subtitle {
     font-family: Open Sans;
     font-size: 38px;
