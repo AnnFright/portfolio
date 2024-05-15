@@ -51,6 +51,21 @@ button, a {
     text-align: left;
 }
 
+button {
+    padding: 6px 10px 10px; /*сверху, справа и слева, снизу*/
+    border: 1px solid var(--green);
+    border-radius: 8px;
+    color: var(--green);
+    background-color: var(--bg-color);
+    cursor: pointer;
+    text-transform: lowercase;
+}
+
+button:hover {
+    color: var(--bg-color);
+    background-color: var(--green);
+}
+
 .container {
     min-width: 320px;
     max-width: 1280px;
@@ -61,7 +76,7 @@ button, a {
 .main-nav a {
     display: inline-block;
     text-decoration: none;
-    padding: 10px 15px 10px 15px;
+    padding: 10px 15px 10px 15px; /*сверху, справа, снизу,слева*/
 }
 
 .main-nav a:hover {
