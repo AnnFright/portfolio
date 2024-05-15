@@ -66,6 +66,67 @@ button:hover {
     background-color: var(--green);
 }
 
+.social {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+.social li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.social-link {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--green);
+    border-radius: 50%;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.social-link:hover {
+    background-color: var(--green);
+}
+
+.social-link_github {
+    background-image: url("../img/social_github.svg");
+}
+
+.social-link_gitlab {
+    background-image: url("../img/social_gitlab.svg");
+}
+
+.social-link_instagram {
+    background-image: url("../img/social_instagram.svg");
+}
+
+.social-link_telegram {
+    background-image: url("../img/social_telegram.svg");
+}
+
+.social-link_vkontakte {
+    background-image: url("../img/social_vk.svg");
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .container {
     min-width: 320px;
     max-width: 1280px;
