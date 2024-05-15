@@ -23,85 +23,88 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-    <a><img src="img/main-logo.svg" width="60" height="60" alt="Логотип"></a>
-    <nav>
-        <a href="#about">Обо мне</a>
-        <a href="#skills">Навыки</a>
-        <a href="#interests">Интересы</a>
-        <a href="#contacts">Контакты</a>
-    </nav>
-</header>
+<div class="container">
+    <header class="main-header">
+        <a><img src="img/main-logo.svg" width="60" height="60" alt="Логотип"></a>
+        <nav>
+            <a href="#about">Обо мне</a>
+            <a href="#skills">Навыки</a>
+            <a href="#interests">Интересы</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </header>
 
-<main>
-    <section id="intro">
-        <img src="img/user_photo.jpg" width="400" height="400" alt="Фото Анастасии">
-        <h1>Анастасия Дмитриева</h1>
-        <p class="subtitle">Программист</p>
-    </section>
+    <main>
+        <section id="intro" class="intro">
+            <img src="img/user_photo.jpg" width="400" height="400" alt="Фото Анастасии">
+            <h1>Анастасия Дмитриева</h1>
+            <p class="subtitle">Программист</p>
+        </section>
 
-    <section id="about">
-        <h2>Пара слов обо мне</h2>
-        <p>Привет ✌</p>
-        <p>В данный момент я учусь в магистратуре МФ МГТУ им. Н. Э. Баумана 
-        по направлению «Информатика и вычисли­тельная техника».</p>
-        <p>В прошлом году я защитила диплом бакалавра на тему «Разработка очень сложного программного комплекса для супер-важной цели». 
-            Работа была высоко оценена комиссией.</p>
-        <p>Также я успела пройти практику на предприятии, где получила навыки администрирования Linux и развертывания облачных хранилищ.</p>
-    </section>
+        <section id="about" class="about">
+            <h2>Пара слов обо мне</h2>
+            <p>Привет ✌</p>
+            <p>В данный момент я учусь в магистратуре МФ МГТУ им. Н. Э. Баумана 
+            по направлению «Информатика и вычисли­тельная техника».</p>
+            <p>В прошлом году я защитила диплом бакалавра на тему «Разработка очень сложного программного комплекса для супер-важной цели». 
+                Работа была высоко оценена комиссией.</p>
+            <p>Также я успела пройти практику на предприятии, где получила навыки администрирования Linux и развертывания облачных хранилищ.</p>
+        </section>
 
-    <section id="skills">
-        <h2>Мои навыки</h2>
-        <div>
-            <p>Сортировать</p>
-            <button>по названию</button>
-            <button>по уровню</button>
-        </div>
-        <dl>
-            <dt><!-- <img src="img/Icon1HTML.svg" width="30" height="30" alt="Логотип HTML"> -->html</dt>
-            <dd>
-                <div style="width: 40%;">40%</div>
-            </dd>
-            <dt><!-- <img src="img/Icon2CSS.svg" width="30" height="30" alt="Логотип CSS"> -->css</dt>
-            <dd>
-                <div style="width: 40%;">40%</div>
-            </dd>
-            <dt><!-- <img src="img/Icon3Py.svg" width="30" height="30" alt="Логотип Python"> -->python</dt>
-            <dd>
-                <div style="width: 40%;">40%</div>
-            </dd>
-            <dt><!-- <img src="img/Icon4CPP.svg" width="30" height="30" alt="Логотип CPP"> -->c++</dt>
-            <dd>
-                <div style="width: 40%;">40%</div>
-            </dd>
-        </dl>
-    </section>
+        <section id="skills" class="skills">
+            <h2>Мои навыки</h2>
+            <div>
+                <p>Сортировать</p>
+                <button>по названию</button>
+                <button>по уровню</button>
+            </div>
+            <dl>
+                <dt><!-- <img src="img/Icon1HTML.svg" width="30" height="30" alt="Логотип HTML"> -->html</dt>
+                <dd>
+                    <div style="width: 40%;">40%</div>
+                </dd>
+                <dt><!-- <img src="img/Icon2CSS.svg" width="30" height="30" alt="Логотип CSS"> -->css</dt>
+                <dd>
+                    <div style="width: 40%;">40%</div>
+                </dd>
+                <dt><!-- <img src="img/Icon3Py.svg" width="30" height="30" alt="Логотип Python"> -->python</dt>
+                <dd>
+                    <div style="width: 40%;">40%</div>
+                </dd>
+                <dt><!-- <img src="img/Icon4CPP.svg" width="30" height="30" alt="Логотип CPP"> -->c++</dt>
+                <dd>
+                    <div style="width: 40%;">40%</div>
+                </dd>
+            </dl>
+        </section>
 
-    <section id="interests">
-        <h2>Мои интересы</h2>
-        <p>Наибольший интерес для меня в данный момент представляет программирование и изучение искусственного интеллекта.</p>
-        <p>Помимо учёбы и работы я также люблю рисовать и переводить различные тексты.</p>
-    </section>
+        <section id="interests" class="interests">
+            <h2>Мои интересы</h2>
+            <p>Наибольший интерес для меня в данный момент представляет программирование и изучение искусственного интеллекта.</p>
+            <p>Помимо учёбы и работы я также люблю рисовать и переводить различные тексты.</p>
+        </section>
 
-    <section id="contacts">
-        <h2>Мои контакты</h2>
-        <ul>
-            <li><a href="tel:+79991234567">+7 999 123-45-67</a></li>
-            <li><a href="mailto:email@mail.ru">email@mail.ru</a></li>
-        </ul>
+        <section id="contacts" class="contacts">
+            <h2>Мои контакты</h2>
+            <ul>
+                <li><a href="tel:+79991234567">+7 999 123-45-67</a></li>
+                <li><a href="mailto:email@mail.ru">email@mail.ru</a></li>
+            </ul>
 
-        <ul>
-            <li><a>GitHub</a></li>
-            <li><a>Gitlab</a></li>
-            <li><a>Instagram</a></li>
-            <li><a>Telegram</a></li>
-            <li><a>Вконтакте</a></li>
-        </ul>
-    </section>
-</main>
-
-<footer>
-    <p>© 2024 Анастасия Дмитриева</p>
+            <ul>
+                <li><a>GitHub</a></li>
+                <li><a>Gitlab</a></li>
+                <li><a>Instagram</a></li>
+                <li><a>Telegram</a></li>
+                <li><a>Вконтакте</a></li>
+            </ul>
+        </section>
+    </main>
+</div>
+<footer class="main-footer">
+    <div class="container">
+        <p>© 2024 Анастасия Дмитриева</p>
+    </div>
 </footer>
 </body>
 </html>
