@@ -36,7 +36,7 @@
 
     <main>
         <section id="intro" class="intro">
-            <img src="img/user_photo.jpg" width="400" height="400" alt="Фото Анастасии">
+            <img src="img/user_photo.jpg" width="400" height="400" alt="Фото Анастасии" style="border-radius: 50%;">
             <h1>Анастасия Дмитриева</h1>
             <p class="subtitle">Программист</p>
         </section>
@@ -58,22 +58,26 @@
                 <button>по названию</button>
                 <button>по уровню</button>
             </div>
-            <dl>
-                <dt><!-- <img src="img/Icon1HTML.svg" width="30" height="30" alt="Логотип HTML"> -->html</dt>
-                <dd>
+            <dl class="skill-list">
+                <dt class="skill-item skill-item_html">html</dt>
+                <dd class="skill-level">
+                    <div style="width: 60%;">40%</div>
+                </dd>
+                <dt class="skill-item skill-item_css">css</dt>
+                <dd class="skill-level">
+                    <div style="width: 55%;">40%</div>
+                </dd>
+                <dt class="skill-item skill-item_python">python</dt>
+                <dd class="skill-level">
+                    <div style="width: 30%;">40%</div>
+                </dd>
+                <dt class="skill-item skill-item_cpp">c++</dt>
+                <dd class="skill-level">
                     <div style="width: 40%;">40%</div>
                 </dd>
-                <dt><!-- <img src="img/Icon2CSS.svg" width="30" height="30" alt="Логотип CSS"> -->css</dt>
-                <dd>
-                    <div style="width: 40%;">40%</div>
-                </dd>
-                <dt><!-- <img src="img/Icon3Py.svg" width="30" height="30" alt="Логотип Python"> -->python</dt>
-                <dd>
-                    <div style="width: 40%;">40%</div>
-                </dd>
-                <dt><!-- <img src="img/Icon4CPP.svg" width="30" height="30" alt="Логотип CPP"> -->c++</dt>
-                <dd>
-                    <div style="width: 40%;">40%</div>
+                <dt class="skill-item skill-item_english">eng</dt>
+                <dd class="skill-level">
+                    <div style="width: 65%;">40%</div>
                 </dd>
             </dl>
         </section>
@@ -86,15 +90,15 @@
 
         <section id="contacts" class="contacts">
             <h2>Мои контакты</h2>
-            <ul>
-                <li><a href="tel:+79991234567">+7 999 123-45-67</a></li>
-                <li><a href="mailto:email@mail.ru">email@mail.ru</a></li>
+            <ul class="contact">
+                <li><a class="contact-link contact-link_phone" href="tel:+79991234567">+7 999 123-45-67</a></li>
+                <li><a class="contact-link contact-link_mail" href="mailto:email@mail.ru">email@mail.ru</a></li>
             </ul>
 
             <ul class="social">
-                <li><a class="social-link  social-link_github"><span class="visually-hidden">GitHub</span></a></li>
-                <li><a class="social-link  social-link_gitlab"><span class="visually-hidden">Gitlab</span></a></li>
-                <li><a class="social-link  social-link_instagram"><span class="visually-hidden">Instagram</span></a></li>
+                <li><a class="social-link social-link_github"><span class="visually-hidden">GitHub</span></a></li>
+                <li><a class="social-link social-link_gitlab"><span class="visually-hidden">Gitlab</span></a></li>
+                <li><a class="social-link social-link_instagram"><span class="visually-hidden">Instagram</span></a></li>
                 <li><a class="social-link social-link_telegram"><span class="visually-hidden">Telegram</span></a></li>
                 <li><a class="social-link social-link_vkontakte"><span class="visually-hidden">Вконтакте</span></a></li>
             </ul>

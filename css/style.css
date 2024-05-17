@@ -66,6 +66,40 @@ button:hover {
     background-color: var(--green);
 }
 
+.contact {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+.contact li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-link {
+    display: block;
+    padding: 5px 40px 40px 42px; /*сверху, справа, снизу, слева*/
+    background-repeat: no-repeat;
+    background-position: left top;
+    text-decoration: none;
+    color: var(--txt-color);
+}
+
+.contact-link:hover {
+    color: var(--green);
+}
+
+.contact-link_phone {
+    background-image: url(../img/ContactsIcon1phone.svg);
+}
+
+.contact-link_mail {
+    background-image: url(../img/ContactsIcon2mail.svg);
+}
+
 .social {
     margin: 0;
     padding: 0;
@@ -114,6 +148,66 @@ button:hover {
     background-image: url("../img/social_vk.svg");
 }
 
+.skill-list {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+
+.skill-list dt {
+    margin-bottom: 6px;
+    padding: 5px 0 5px 38px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+
+
+.skill-level {
+    margin: 4px 0 20px;
+    padding: 2px;
+    font-size: 0;
+    border: 1px solid var(--txt-color);
+    border-radius: 16px;
+}
+
+
+.skill-level div {
+    height: 14px;
+    background-color: var(--green);
+    border-radius: 8px;
+}
+
+
+.skill-item {
+    text-transform: lowercase;
+}
+
+
+.skill-item_html {
+    background-image: url("../img/Icon1HTML.svg");
+}
+
+
+.skill-item_css {
+    background-image: url("../img/Icon2CSS.svg");
+}
+
+
+.skill-item_cpp {
+    background-image: url("../img/Icon4CPP.svg");
+}
+
+
+.skill-item_python {
+    background-image: url("../img/Icon3Py.svg");
+}
+
+.skill-item_english {
+    background-image: url("../img/Icon5English.svg");
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -137,7 +231,7 @@ button:hover {
 .main-nav a {
     display: inline-block;
     text-decoration: none;
-    padding: 10px 15px 10px 15px; /*сверху, справа, снизу,слева*/
+    padding: 10px 15px 10px 15px; /*сверху, справа, снизу, слева*/
 }
 
 .main-nav a:hover {
@@ -153,6 +247,6 @@ button:hover {
 }
 
 footer {
-    color: var(--txt-color);
-    background-color: var(--green);
+    color: var(--bg-color);
+    background-color: var(--txt-color);
 }
