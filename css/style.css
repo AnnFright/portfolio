@@ -66,6 +66,13 @@ button:hover {
     background-color: var(--green);
 }
 
+.container {
+    min-width: 320px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 .contact {
     margin: 0;
     padding: 0;
@@ -98,6 +105,17 @@ button:hover {
 
 .contact-link_mail {
     background-image: url(../img/ContactsIcon2mail.svg);
+}
+
+.main-nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px 10px 15px; /*сверху, справа, снизу, слева*/
+    color: var(--txt-color);
+}
+
+.main-nav a:hover {
+    color: var(--green);
 }
 
 .social {
@@ -208,6 +226,23 @@ button:hover {
     background-image: url("../img/Icon5English.svg");
 }
 
+.subtitle {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.subtitle {
+    font-family: Open Sans;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: left;
+    color: var(--green);
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -219,31 +254,6 @@ button:hover {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
-
-.container {
-    min-width: 320px;
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.main-nav a {
-    display: inline-block;
-    text-decoration: none;
-    padding: 10px 15px 10px 15px; /*сверху, справа, снизу, слева*/
-}
-
-.main-nav a:hover {
-    color: var(--green);
-}
-
-.subtitle {
-    font-family: Open Sans;
-    font-size: 38px;
-    font-weight: 400;
-    line-height: 1.2;
-    text-align: left;
 }
 
 footer {
