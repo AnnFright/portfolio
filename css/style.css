@@ -98,11 +98,16 @@ section {
     white-space: nowrap;
 }
 
+#contacts {
+    margin-bottom: 120px;
+}
+
 
 .contact li {
     display: inline-block;
     margin: 0 auto;
     padding: 0;
+    
 }
 
 .contact-link {
@@ -113,6 +118,8 @@ section {
     background-position: left;
     text-decoration: none;
     color: var(--txt-color);
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .contact-link:hover {
@@ -143,10 +150,6 @@ section {
     margin: 0;
 }
 
-.main-nav {
-    display: flex;
-}
-
 .main-header {
     display: flex;
     padding-top: 60px;
@@ -165,7 +168,6 @@ section {
     text-decoration: none;
     padding: 10px 15px 10px 15px; /*сверху, справа, снизу, слева*/
     color: var(--txt-color);
-    align-items: flex-start;
 }
 
 .main-nav a:hover {
@@ -179,9 +181,11 @@ section {
 }
 
 .social {
-    margin: 0;
-    margin-bottom: 120px;
+    display: flex;
+    margin: 0 auto;
     padding: 0;
+    gap: 20px;
+    white-space: nowrap;
     list-style-type: none;
 }
 
@@ -189,8 +193,7 @@ section {
 .social li {
     display: inline-block;
     margin: 0;
-    margin-right: 15px;
-    padding: 0;
+    padding: 0px;
 }
 
 .social-link {
