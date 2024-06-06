@@ -98,7 +98,7 @@ section {
     white-space: nowrap;
 }
 
-#contacts {
+.contacts {
     margin-bottom: 120px;
 }
 
@@ -114,7 +114,6 @@ section {
     display: block;
     padding: 0 0 0 42px; /*сверху, справа, снизу, слева*/
     background-repeat: no-repeat;
-    background-size: 25px;
     background-position: left;
     text-decoration: none;
     color: var(--txt-color);
@@ -134,19 +133,19 @@ section {
     background-image: url(../img/ContactsIcon2mail.svg);
 }
 
-#intro {
+.intro {
     display: flex;
     align-items: center;
     gap: 70px;
     justify-content: space-between;
 }
 
-#intro h1 {
+.intro h1 {
     margin-bottom: 20px;
     margin-top: 0;
 }
 
-#intro p {
+.intro p {
     margin: 0;
 }
 
