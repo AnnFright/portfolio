@@ -534,11 +534,6 @@ footer {
 
 @media screen and (max-width: 360px) {   
 
-    h2 {
-        margin-top: 50px;
-        margin-bottom: 30px;
-      }
-
       section {
         margin-top: 50px;
       }
