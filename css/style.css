@@ -521,6 +521,10 @@ footer {
       .main-footer {
         padding: 30px 0 30px;
       }
+      
+      .social {
+        gap: 15px;
+      }
 
       .skills p {
         margin-bottom: 0;
@@ -574,10 +578,12 @@ footer {
         display: inline-flex;
         flex-direction: column;
         margin-bottom: 20px;
+        gap: 15px;
       }
 
       .social {
           flex-wrap: wrap;
+          gap: 15px;
       }
  
 }
