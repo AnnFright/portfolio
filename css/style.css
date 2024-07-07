@@ -242,7 +242,7 @@ section {
 }
 
 .skills h2 {
-    margin-bottom:  0;
+  margin-bottom: 0;
 }
 
 .skills-header {
@@ -254,6 +254,7 @@ section {
     align-items: baseline;
     padding: 0;
     gap: 20px;
+    margin-bottom:  40px;
 }
   
   .skills-button {
@@ -495,6 +496,10 @@ footer {
         justify-content: space-between;
         align-items: center;
       }
+
+      .skills h2 {
+        margin-bottom:  0;
+    }
       
       .subtitle {
         font-size: 20px;
