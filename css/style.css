@@ -569,10 +569,6 @@ footer {
         padding-bottom: 8px;
     }
 
-      .skills {
-        gap: 20px;
-      }
-
       .skills-header {
         flex-direction: column;
         gap: 20px;
