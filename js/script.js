@@ -12,7 +12,7 @@ let skillList = document.querySelector('dl.skill-list');
 
 data.forEach(element => {
     let dt = document.createElement('dt');
-    dt.classList.add('skill-item');
+    dt.classList.add('skill-item', element.class);
     dt.textContent = element.item;
     dt.style.backgroundImage = `url('./img/${element.iconName}')`
 
