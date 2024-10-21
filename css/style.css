@@ -302,30 +302,6 @@ section {
     text-transform: lowercase;
 }
 
-
-.skill-item_html {
-    background-image: url("../img/Icon1HTML.svg");
-}
-
-
-.skill-item_css {
-    background-image: url("../img/Icon2CSS.svg");
-}
-
-
-.skill-item_cpp {
-    background-image: url("../img/Icon4CPP.svg");
-}
-
-
-.skill-item_python {
-    background-image: url("../img/Icon3Py.svg");
-}
-
-.skill-item_english {
-    background-image: url("../img/Icon5English.svg");
-}
-
 .subtitle {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 38px;
