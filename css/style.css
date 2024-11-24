@@ -257,7 +257,7 @@ section {
     margin-bottom:  40px;
 }
   
-  .skills-button {
+  .skills-sort {
     display: flex;
     flex-direction: row;
     align-items: baseline;
@@ -415,12 +415,18 @@ footer {
         width: 30px;
         height: 30px;
       }
+
+      .button-nav:hover {
+        background-color: transparent;
+        color: var(--txt-color);
+        opacity: 1;
+    }
     
-      .button_close-nav {
+      .button-nav_close {
         background-image: url(../img/close.svg);
       }
     
-      .button_open-nav {
+      .button-nav_open {
         background-image: url(../img/burger.svg);
       }
 
@@ -459,6 +465,10 @@ footer {
       .main-header,
       .main-nav {
         flex-direction: column;
+      }
+
+      .main-nav_closed{
+        display: none;
       }
       
       .name {
@@ -516,13 +526,13 @@ footer {
         margin-bottom: 30px;
       }
 
-      .skills-button {
+      .skills-sort {
         display: flex;
         gap: 20px;
         align-items: center;
       }
     
-      .skills-button button {
+      .skills-sort button {
         text-align: center;
         border-radius: 8px;
         padding: 6px 10px 10px 10px;
@@ -550,14 +560,14 @@ footer {
         gap: 20px;
       }
 
-      .skills-button {
+      .skills-sort {
         gap: 10px;
         width: 100%;
         flex-direction: column;
         align-items: start;
       }
     
-      .skills-button button {
+      .skills-sort button {
         width: 100%;
       }
     
