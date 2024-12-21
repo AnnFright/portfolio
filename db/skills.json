@@ -1,0 +1,27 @@
+[
+    {
+        "skill":"html", 
+        "level":60, 
+        "iconName":"Icon1HTML.svg"
+    },
+    {
+        "skill":"css", 
+        "level":55, 
+        "iconName":"Icon2CSS.svg"
+    },
+    {
+        "skill":"python", 
+        "level":30, 
+        "iconName":"Icon3Py.svg"
+    },
+    {
+        "skill":"c++", 
+        "level":40, 
+        "iconName":"Icon4CPP.svg"
+    },
+    {
+        "skill":"english", 
+        "level":44, 
+        "iconName":"Icon5English.svg"
+    }
+]

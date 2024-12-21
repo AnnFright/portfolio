@@ -1,12 +1,6 @@
 'use strict';
 let skills = {
-    data : [
-        {skill:'html', level:60, iconName:'Icon1HTML.svg'},
-        {skill:'css', level:55, iconName:'Icon2CSS.svg'},
-        {skill:'python', level:30, iconName:'Icon3Py.svg'},
-        {skill:'c++', level:40, iconName:'Icon4CPP.svg'},
-        {skill:'english', level:44, iconName:'Icon5English.svg'},
-    ],
+    data : [],
     isSorted: false,
     generateList(parentElement){
         parentElement.innerHTML = '';
@@ -48,10 +42,25 @@ let skills = {
             console.log(`Инвертировали порядок сортировки`);
         }
         this.generateList(document.querySelector("dl.skill-list"));
+    },
+    getData: function(url,parentElement,skillSection){
+        fetch(url)
+        .then(data => data.json())
+        .then(object =>{
+            this.data = object;
+            this.generateList(parentElement);
+        })
+        .catch(()=>{
+            console.error('что-то пошло не так');
+            skillSection.remove(); 
+        })
     }
 }
 
-skills.generateList(document.querySelector('dl.skill-list'));
+const skillList = document.querySelector("dl.skill-list");
+
+skills.getData('db/skills.json', skillList);
+skills.generateList(skillList);
 
 const sortBtnBlock = document.querySelector("div.skills-sort");
 sortBtnBlock.addEventListener('click', (e) => {
