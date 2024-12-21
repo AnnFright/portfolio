@@ -129,11 +129,27 @@ section {
 }
 
 .contact-link_phone {
-    background-image: url(../img/ContactsIcon1phone.svg);
+    background-image: url(../img/contacts_phone.svg);
+}
+
+.dark-theme {
+  --txt-color: #CCCCCC;
+  --bg-color: #031923;
+}
+.dark-theme .contact-link_phone {
+    background-image: url(../img/contacts_phone_dark.svg);
 }
 
 .contact-link_mail {
-    background-image: url(../img/ContactsIcon2mail.svg);
+    background-image: url(../img/contacts_mail.svg);
+}
+
+.dark-theme .contact-link_mail {
+    background-image: url(../img/contacts_mail_dark.svg);
+}
+
+.dark-theme .social-link {
+  background-color: #CCCCCC;
 }
 
 .intro {
