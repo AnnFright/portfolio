@@ -84,3 +84,27 @@ btn.addEventListener('click', (e) => {
     e.target.classList.contains('button-nav_open') ? menu.open() : menu.close();
 });
 menu.close();
+
+const changeTheme = (theme) => {
+    if (theme) {
+        document.body.classList.remove('dark-theme');
+    } else {
+        document.body.classList.add('dark-theme');
+    }
+    localStorage.setItem('dark-theme-flag', theme);
+}
+
+const checkbox = document.querySelector(".switch-checkbox");
+
+checkbox.addEventListener("change", () => {
+    changeTheme(checkbox.checked);
+});
+
+const darkThemeLoaded = localStorage.getItem('dark-theme-flag');
+if (darkThemeLoaded === null || darkThemeLoaded === "false") {
+    changeTheme(false);
+    checkbox.checked = false;
+} else {
+    changeTheme(true);
+    checkbox.checked = true;
+}

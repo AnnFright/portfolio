@@ -137,7 +137,7 @@ section {
   --bg-color: #031923;
 }
 .dark-theme .contact-link_phone {
-    background-image: url(../img/contacts_phone_dark.svg);
+    background-image: url(../img/dark-theme/contacts_phone.svg);
 }
 
 .contact-link_mail {
@@ -145,7 +145,7 @@ section {
 }
 
 .dark-theme .contact-link_mail {
-    background-image: url(../img/contacts_mail_dark.svg);
+    background-image: url(../img/dark-theme/contacts_mail.svg);
 }
 
 .dark-theme .social-link {
@@ -273,7 +273,7 @@ section {
     margin-bottom:  40px;
 }
   
-  .skills-sort {
+.skills-sort {
     display: flex;
     flex-direction: row;
     align-items: baseline;
@@ -288,7 +288,6 @@ section {
     width: 100%;
 }
 
-
 .skill-list dt {
     margin-bottom: 6px;
     padding: 5px 0 5px 38px;
@@ -296,7 +295,6 @@ section {
     background-repeat: no-repeat;
     background-size: 30px;
 }
-
 
 .skill-level {
     margin: 4px 0 20px;
@@ -306,16 +304,69 @@ section {
     border-radius: 16px;
 }
 
-
 .skill-level div {
     height: 14px;
     background-color: var(--green);
     border-radius: 8px;
 }
 
-
 .skill-item {
     text-transform: lowercase;
+}
+
+.switch {    
+  position: fixed;
+  bottom: 20px;
+  right: 20px;  
+  width: 60px;
+  height: 34px;
+}
+
+.switch-checkbox {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.switch-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 34px;
+  background-color: #CCCCCC;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.switch-slider:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    bottom: 0;
+    height: 40px;
+    width: 40px;
+    margin: auto 0;
+    border: 1px solid #CCCCCC;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    background-image: url('../img/dark-theme/moon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px;
+    transition: 0.4s;
+}
+
+.switch-checkbox:checked + .switch-slider:before {
+    transform: translateX(24px);
+    background-color: #FFFFFF;
+    background-image: url('../img/dark-theme/sun.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px;
 }
 
 .subtitle {
