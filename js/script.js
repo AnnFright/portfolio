@@ -1,19 +1,19 @@
 'use strict';
-let skills = {
+const skills = {
     data : [],
     isSorted: false,
     generateList(parentElement){
         parentElement.innerHTML = '';
         this.data.forEach(element => {
-            let dt = document.createElement('dt');
+            const dt = document.createElement('dt');
             dt.classList.add('skill-item');
             dt.textContent = element.skill;
             dt.style.backgroundImage = `url('./img/${element.iconName}')`;
 
-            let dd = document.createElement('dd');
+            const dd = document.createElement('dd');
             dd.classList.add('skill-level');
 
-            let div = document.createElement('div');
+            const div = document.createElement('div');
             div.textContent = `${element.level}%`;
             div.style.width = div.textContent;
 
@@ -26,12 +26,10 @@ let skills = {
             switch (sortingType){
                 case 'name':
                     this.data.sort((a,b) => a.skill.localeCompare(b.skill));
-                    console.log(`Отсортировали данные по ${sortingType}`);
                     break;
                     
                 case 'level':
                     this.data.sort((a,b) => b.level - a.level); 
-                    console.log(`Отсортировали данные по ${sortingType}`);
                     break;
                 default:
                     return;
@@ -39,7 +37,6 @@ let skills = {
             this.isSorted = sortingType;
         } else {
             this.data.reverse();
-            console.log(`Инвертировали порядок сортировки`);
         }
         this.generateList(document.querySelector("dl.skill-list"));
     },
@@ -58,9 +55,9 @@ let skills = {
 }
 
 const skillList = document.querySelector("dl.skill-list");
+const skillsSection = document.querySelector('section.skills');
 
-skills.getData('db/skills.json', skillList);
-skills.generateList(skillList);
+skills.getData('db/skills.json', skillList, skillsSection);
 
 const sortBtnBlock = document.querySelector("div.skills-sort");
 sortBtnBlock.addEventListener('click', (e) => {

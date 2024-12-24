@@ -152,6 +152,10 @@ section {
   background-color: #CCCCCC;
 }
 
+.dark-theme footer {
+  background-color: var(--green);
+}
+
 .intro {
     display: flex;
     align-items: center;
